@@ -1,0 +1,15 @@
+p {
+    color: mediumvioletred;
+}
+
+.saludo{
+    color: green;
+}
+
+.negritas{
+    font-weight: bold;
+}
+
+.cactus{
+    width: 300px;
+}
