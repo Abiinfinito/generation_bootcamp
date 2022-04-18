@@ -1,0 +1,44 @@
+/* Selector universal */
+/* *{
+    background-color: aquamarine;
+} */
+
+/* :root{
+
+}*/
+
+
+
+/* Selector de etiqueta */
+/* elemento HTML{
+
+} */
+
+/* Selector de clase */
+.cuadro{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    border: 1px solid palevioletred;
+    border-radius: 10px;
+}
+
+/* Sedelctor de id */
+#forma{
+    width: 100px;
+    height: 100px;
+    background-color: purple; 
+}
+
+/* !Important tiene la mayor jerarquía*/
+
+
+.color{
+    background-color: lightcoral;
+}
+.color{
+    background-color: palevioletred;
+}
+.color{
+    background-color: indianred;
+}
