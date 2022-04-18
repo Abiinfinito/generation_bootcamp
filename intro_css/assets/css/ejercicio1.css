@@ -1,0 +1,15 @@
+.cuadro1{
+    width: auto;
+    height: auto;
+    background-color: violet;
+}
+
+.cuadro2{
+    width: auto;
+    height: auto;
+    background-color: orangered;
+    border: 1px solid rgb(120, 40, 11);
+    border-radius: 10px;
+}
+
+    

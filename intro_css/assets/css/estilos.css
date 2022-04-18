@@ -15,6 +15,11 @@
 } */
 
 /* Selector de clase */
+
+/*body{
+    background-color: lightgray;
+}*/
+
 .cuadro{
     width: 100px;
     height: 100px;
@@ -41,4 +46,31 @@
 }
 .color{
     background-color: indianred;
+}
+
+.color-texto{
+    color: rgb(8, 122, 126);
+    background-color: lightcyan;
+}
+
+.forma{
+    height: 100px;
+    width: 300px;
+}
+
+.borde{
+    border: 3px solid black; 
+    /* border-top: 3px solid goldenrod ;
+    border-right: 3px solid teal;
+    border-bottom: 3px solid palevioletred;
+    border-left: 3px solid slateblue; */
+    text-align: center; /*centrar a lo ancho */
+    line-height: 100px; /* centrar a lo alto */
+}
+
+
+p{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
 }
