@@ -1,0 +1,15 @@
+
+*{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+}
+
+table, tr, td, th{
+    margin: auto;
+    border: 1px solid black;
+    width: 900px;
+}
+

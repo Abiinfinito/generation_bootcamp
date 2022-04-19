@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS propios-->
+    <link rel="stylesheet" href="assets/css/formulario.css">
+
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- <form action="" method="post"></form> -->
+    <form>
+        <input type="text" placeholder="Nombre" required minlength="6" maxlength="10"  >
+        <input type="text" placeholder="Apellido" size="40" >
+        <input type="number" min="5" max="10" step=".5">
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="datetime-local">
+        <input type="time">
+        <input type="password">
+        <input type="file">
+        <input type="range" min="1" max="3">
+        <input type="checkbox" value="Holi" checked>
+        <input type="radio" name="n">
+        <input type="radio" name="n">
+        <input type="email" required>
+        <select name="menú" size="1">
+            <option value="1">Un</option>
+            <option value="2">Deux</option>
+            <option value="3">Trois</option>
+        </select>
+        <textarea name="" id="" cols="10" rows="5"></textarea>
+        <input type="color" id="inputColor" value="#ff000">
+        <input type="reset"value="limpiar">
+        <input type="submit" value="enviar">
+    </form>
+
+    <script>
+        const color = document.querySelector("#inputColor")
+        console.log(color);
+
+        color.addEventListener("change", function (e){
+            document.body.style.backgroundColor = e.target.value;
+        })
+    </script>
+
+    <hr>
+
+    <h1>Formulario</h1>
+    <form class="formulario">
+        <div class="nombre">
+            <label class="acomodoLabel" for="nombre">Nombre</label>
+            <input class="colorFondo" type="text" name="name" id="nombre" required placeholder="Nombre">
+        </div>
+        <div class="apellido">
+            <label class="acomodoLabel" for="apellido">Apellido</label>
+            <input class="colorFondo" type="text" id="apellido" placeholder="Apellido" >
+        </div>
+        <div class="password">
+            <label class="acomodoLabel" for="password">Contraseña</label>
+            <input class="colorFondo" type="password" id="password" required>
+        </div>
+        <div class="correo">
+            <label class="acomodoLabel" for="correo">Correo</label>
+            <input class="colorFondo" type="email" required id="correo">
+        </div>
+        <div class="enviar">
+            <input class="btn-enviar" type="submit" value="Enviar">
+        </div>
+    </form>
+
+
+</body>
+</html>
