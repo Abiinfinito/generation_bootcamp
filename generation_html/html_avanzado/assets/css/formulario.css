@@ -1,8 +1,16 @@
+
+h1{
+    text-align: center;
+}
+
+
 .formulario{
     border: 5px solid blueviolet;
     padding: 10px;
     background-color: rgb(167, 135, 197);
     border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .colorFondo{
