@@ -1,0 +1,43 @@
+.padre{
+    width: 80%;
+    height: 60vh; /*Cada unidad del vh es un 1% del alto de la pantalla
+    */
+    border: 1px solid red;
+    margin: 0 auto;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+/*
+row (fila)
+justify content los acomoda horizontal (derecha - izq)
+align-items acomoda verticalmente (arriba - abajo)
+
+column (columna)
+align-items acomoda horizontal (izq - derecha)
+justify content los acomoda vertical (arriba - abajo)
+
+*/
+
+
+.hijo{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    
+}
+
+.div1{
+    background-color: aquamarine;
+}
+
+.div2{
+    background-color: violet;
+}
+
+.div3{
+    background-color: goldenrod;
+}
