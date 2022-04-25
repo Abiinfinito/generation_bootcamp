@@ -1,4 +1,12 @@
 
+/* Manejador de eventos GLOBAL */
+//load es un evento de cargar la pagina
+//se puede poner window. o solo el addEvent
+addEventListener('load', function(){
+    this.alert('Se ha terminado de cargar la página');
+})
+
+
 function saludar(){
     alert('Hola');
 }
@@ -17,14 +25,14 @@ $botonSemantico.onclick = function (evento){
 
 
 /* Manejador de eventos múltiple */
-/* Muchas funciones al mismo tiempo */
+/* Muchas funciones al mismo tiempo/evento */
 const $botonMultiple = document.getElementById('evento-multiple');
 
 $botonMultiple.addEventListener('click', saludarMultiple );
 
 $botonMultiple.addEventListener('click', function(e){
     console.log(e.target);
-})
+});
 
 function saludarMultiple(){
     alert('hola desde manejador múltiple');
