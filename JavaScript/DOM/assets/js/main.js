@@ -9,7 +9,6 @@ const $card = document.querySelector ('.card');
 
 console.log($parr);
 
-
 //nodeName
 console.log($parr.nodeName); //nodeName muestra el nombre del nodo
 console.log($titulo.nodeName);
@@ -38,7 +37,7 @@ $parr.innerHTML = '<a href="#">Este es un enlace</a>'; //solo reemplaza lo que h
 
  function crearElemento(){
      const img = document.createElement('img');
-     img.src = "https://heraldodemexico.com.mx/u/fotografias/m/2019/8/29/f850x638-141498_218987_5050.jpg"
+     img.src = ""
      
      //appendChild permite hacer uso de los elementos creados
      $card.appendChild(img);
