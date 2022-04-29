@@ -38,11 +38,11 @@ inputs.forEach((inp)=>{
 			case "nombre":
 				//console.log(e.target.value);
 				if(expresiones.nombre.test(e.target.value)){
-					
+					statusInf.nombre = true
 					nombreError.textContent = ""
 				}
 				else{
-					console.log("Nombre incorrecto");
+					statusInf.nombre = false
 					nombreError.textContent = "Error"
 				}
 
@@ -50,11 +50,11 @@ inputs.forEach((inp)=>{
 
 			case "apellido":
 				if(expresiones.nombre.test(e.target.value)){
-					
+					statusInf.apellido = true
 					apellidoError.textContent = ""
 				}
 				else{
-					console.log("Apellido incorrecto");
+					statusInf.apellido = false
 					apellidoError.textContent = "Error"
 				}
 
@@ -62,11 +62,11 @@ inputs.forEach((inp)=>{
 			
 			case "email":
 				if(expresiones.email.test(e.target.value)){
-					
+					statusInf.email = true
 					emailError.textContent = ""
 				}
 				else{
-					console.log("Email incorrecto");
+					statusInf.email = false
 					emailError.textContent = "Error"
 				}
 
@@ -74,11 +74,11 @@ inputs.forEach((inp)=>{
 
 			case "password":
 				if(expresiones.password.test(e.target.value)){
-					
+					statusInf.password = true
 					passwordError.textContent = ""
 				}
 				else{
-					
+					statusInf.password = false
 					passwordError.textContent = "Error"
 				}
 
@@ -86,11 +86,11 @@ inputs.forEach((inp)=>{
 				
 			case "telefono":
 				if(expresiones.telefono.test(e.target.value)){
-					
+					statusInf.telefono = true
 					telefonoError.textContent = ""
 				}
 				else{
-					
+					statusInf.telefono = false
 					telefonoError.textContent = "Error"
 				}
 
@@ -101,7 +101,15 @@ inputs.forEach((inp)=>{
 } )
 
 formulario.addEventListener("submit",(e)=>{
-	e.preventDefault()
-	console.log("Enviado");
+	e.preventDefault();
+	console.log(Object.values(statusInf));
+	console.log(Object.values(statusInf).includes(false));
+	if(!Object.values(statusInf).includes(false)){
+		console.log("Enviado");
+	}
+	else{
+		console.log("No Enviado");
+	}
+	
 })
 
