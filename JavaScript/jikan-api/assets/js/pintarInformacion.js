@@ -40,6 +40,10 @@ fetch(urlId).then(resp => resp.json()).then(datos => {
             const favoritos =  JSON.parse(localStorage.getItem("favoritos"));
             favoritos.push(datos)
 
+            /* datosGuardados = datosGuardados.filter((el) => el.nombre != datos.nombre)
+            datosGuardados.push(datos) */
+
+
             localStorage.setItem("favoritos",JSON.stringify(favoritos))
         }
         else{
