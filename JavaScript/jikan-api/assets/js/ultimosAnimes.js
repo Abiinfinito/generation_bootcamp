@@ -8,7 +8,7 @@ fetch (urlUltimos).then(resp => resp.json()).then(datos =>{
     /* console.log(arregloAnimesUltimos); */
 
     arregloAnimesUltimos.forEach((anime) => {
-        /* console.log(anime); */
+        /* console.log(anime); */78
 
         const datosNecesarios = {
             nombre: anime.title,
@@ -18,12 +18,14 @@ fetch (urlUltimos).then(resp => resp.json()).then(datos =>{
         }
 
         const template = `<div class="col mb-4">
+                          <a href="informacion.html?id=${datosNecesarios.id}">
                            <div class="card">
                            <img src="${datosNecesarios.imagen}" class="card-img-top" alt="...">
                              <div class="card-body">
                                <h5 class="card-title">${datosNecesarios.nombre}</h5>
                              </div>
                             </div>
+                            </a>
                            </div>`
         
         ultimosAnimes.innerHTML += template
